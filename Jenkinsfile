@@ -4,10 +4,10 @@ pipeline {
     stages {  
          stage('maven build') {
             steps {
-             sh "mvn -Dmaven.test.failure.ignore=true clean package"
+             sh  "mvn clean spring-boot:run"
             }
         }
-        
+       
          stage('archive artifat') {
             steps {
                 archiveArtifacts artifacts: '**/target/*.jar', followSymlinks: false
