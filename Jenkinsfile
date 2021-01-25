@@ -4,7 +4,7 @@ pipeline {
     stages {  
          stage('maven build') {
             steps {
-             sh  "mvn clean package spring-boot"
+             sh  "mvn clean package"
             }
         }
        
