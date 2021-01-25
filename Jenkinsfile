@@ -10,7 +10,7 @@ pipeline {
        
          stage('archive artifat') {
             steps {
-                archiveArtifacts artifacts: '**/target/*.war', followSymlinks: false
+                archiveArtifacts artifacts: '**/target/*.jar', followSymlinks: false
             }
         }
         
