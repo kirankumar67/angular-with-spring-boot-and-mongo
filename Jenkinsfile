@@ -15,11 +15,11 @@ pipeline {
         }
         
       // stage('tocat deplye') {
-           steps {
+          // steps {
         //sh  "java -jar 
 
           //  }
        // }
     }
 }
-}
+
